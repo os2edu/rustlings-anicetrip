@@ -12,3 +12,12 @@ fn check() {
         // .stdout("rust test 完成") // predicates::str::contains("总的题目数")
         ;
 }
+
+
+
+    let mut x = 100;
+    let y = &mut x;
+    *y += 100;
+    *y += 1000;
+    assert_eq!(x, 1200);
+}
