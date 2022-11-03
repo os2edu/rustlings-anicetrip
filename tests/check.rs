@@ -13,11 +13,3 @@ fn check() {
         ;
 }
 
-
-
-    let mut x = 100;
-    let y = &mut x;
-    *y += 100;
-    *y += 1000;
-    assert_eq!(x, 1200);
-}
